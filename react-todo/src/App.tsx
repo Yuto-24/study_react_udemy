@@ -4,15 +4,9 @@ import "./styles.css"
 export const App = () => {
   const [todoText, setTodoText] = useState('');
 
-  const [incompleteTasks, setIncompleteTasks] = useState([
-    'ああああ',
-    'いいいいい'
-  ]);
+  const [incompleteTasks, setIncompleteTasks] = useState(['Task']);
 
-  const [completeTasks, setCompleteTasks] = useState([
-    '完了済みタスク',
-    'うううう'
-  ]);
+  const [completeTasks, setCompleteTasks] = useState(['Done']);
 
   const onChangeTodoText = (event: any) => setTodoText(event.target.value);
 
